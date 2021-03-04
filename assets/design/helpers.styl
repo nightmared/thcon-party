@@ -1,0 +1,10 @@
+._text-justify
+  text-align justify
+
+._fade-in
+  opacity 0
+  transition opacity $timing-normal ($timing-slow - $timing-fast)
+
+  /* stylelint-disable-next-line */
+  body.-do-splash &
+    opacity 1

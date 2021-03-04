@@ -1,0 +1,60 @@
+$font-size = 6vw
+$line-height = 1
+$height = 3 * $line-height * $font-size
+
+.splash-title
+  display flex
+  margin 0
+  font-size $font-size
+  font-family monospace
+  line-height $line-height
+
+  > .logo
+    z-index 1
+    width auto
+    height $height
+    background linear-gradient(to right, #fff 80%, transparent)
+
+    // outline 1px solid orange
+    > .image
+      width auto
+      height 100%
+
+    &::before
+      position absolute
+      top -5%
+      right 100%
+      bottom -5%
+      width 100vw
+      background #fff
+      content ''
+
+  > .words
+    display flex
+    flex-direction column
+    transition transform $timing-slow
+
+    > .acking
+      color #e51e21
+
+  /* stylelint-disable-next-line */
+  body.-do-splash &
+    > .logo
+      animation splash-logo $timing-slow
+
+    > .words
+      animation splash-words $timing-slow
+
+@keyframes splash-logo
+  from
+  25%
+    transform translateX(calc((1px * var(--translateX) / 2))) translateY(calc(1px * var(--translateY))) scale(calc(var(--scale) * 0.75))
+
+  50%
+    transform translateX(calc((1px * var(--translateX) / 2)))
+
+@keyframes splash-words
+  from
+  50%
+    transform translateX(calc(-1px * var(--translateX)))
+    opacity 0

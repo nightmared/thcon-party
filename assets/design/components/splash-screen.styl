@@ -1,0 +1,17 @@
+.splash-screen
+  display flex
+  flex-direction column
+  min-height 50vh
+  transition min-height $timing-fast
+
+  @media (orientation landscape), (min-width 30em)
+    min-height 100vh
+
+  > .wrapper
+    display flex
+    flex 1
+    align-items center
+    justify-content center
+
+  > .splash-countdown
+    color red
