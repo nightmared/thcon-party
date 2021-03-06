@@ -1,0 +1,48 @@
+$glitch-offset = 2px
+
+.glitched-element
+  position relative
+
+  > .original
+    z-index 1
+
+  > .glitch1
+  > .glitch2
+    position absolute
+    top 0
+    left 0
+    z-index 2
+    display block
+    animation-duration $timing-slow
+
+  > .glitch1
+    transform translateX($glitch-offset)
+    filter drop-shadow((- $glitch-offset) 0 0 #0f0)
+    animation-name glitch1
+    clip-path polygon(0 0, 0 0, 100% 0, 100% 0)
+
+  > .glitch2
+    transform translateX((- $glitch-offset))
+    filter drop-shadow($glitch-offset 0 0 #00f)
+    animation-name glitch2
+    clip-path polygon(0 100%, 0 100%, 100% 100%, 100% 100%)
+
+  /* stylelint-disable-next-line */
+  body.-do-splash &
+    > .glitch1
+    > .glitch2
+      animation-iteration-count unit(($timing-splash / $timing-slow) * 1.1, '')
+
+@keyframes glitch1
+  for i in 0 .. 19
+    {s('%s% , %s%', i * 5, (i + 1) * 5 - 1)}
+      $top = math(0, 'random') * 70
+      $bottom = math(0, 'random') * 20 + $top
+      clip-path s('polygon(0 %s%, 0 %s%, 100% %s%, 100% %s%)', $top, $bottom, $bottom, $top)
+
+@keyframes glitch2
+  for i in 0 .. 19
+    {s('%s% , %s%', i * 5, (i + 1) * 5 - 1)}
+      $top = math(0, 'random') * 70 + 10
+      $bottom = math(0, 'random') * 20 + $top
+      clip-path s('polygon(0 %s%, 0 %s%, 100% %s%, 100% %s%)', $top, $bottom, $bottom, $top)

@@ -15,7 +15,6 @@ $height = 3 * $line-height * $font-size
     height $height
     background linear-gradient(to right, #fff 80%, transparent)
 
-    // outline 1px solid orange
     > .image
       width auto
       height 100%
@@ -30,31 +29,32 @@ $height = 3 * $line-height * $font-size
       content ''
 
   > .words
-    display flex
-    flex-direction column
-    transition transform $timing-slow
-
-    > .acking
-      color #e51e21
+    transition transform $timing-splash
 
   /* stylelint-disable-next-line */
   body.-do-splash &
     > .logo
-      animation splash-logo $timing-slow
+      animation splash-logo $timing-splash
 
     > .words
-      animation splash-words $timing-slow
+      animation splash-words $timing-splash
+
+  /* stylelint-disable-next-line */
+  &:hover .glitched-element
+    > .glitch1
+    > .glitch2
+      animation-iteration-count infinite
 
 @keyframes splash-logo
   from
-  25%
+  33%
     transform translateX(calc((1px * var(--translateX) / 2))) translateY(calc(1px * var(--translateY))) scale(calc(var(--scale) * 0.75))
 
-  50%
+  67%
     transform translateX(calc((1px * var(--translateX) / 2)))
 
 @keyframes splash-words
   from
-  50%
+  67%
     transform translateX(calc(-1px * var(--translateX)))
     opacity 0

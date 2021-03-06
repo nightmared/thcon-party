@@ -3,8 +3,12 @@
 
 ._fade-in
   opacity 0
-  transition opacity $timing-normal ($timing-slow - $timing-fast)
+  transition opacity $timing-normal ($timing-splash - $timing-fast)
 
   /* stylelint-disable-next-line */
   body.-do-splash &
+  body.-no-js &
     opacity 1
+
+._accent
+  color #e51e21
