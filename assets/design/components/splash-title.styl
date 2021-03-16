@@ -5,9 +5,11 @@ $height = 3 * $line-height * $font-size
 .splash-title
   display flex
   margin 0
+  font-weight 500
   font-size $font-size
-  font-family monospace
+  font-family overpass, monospace
   line-height $line-height
+  letter-spacing -0.1em
 
   > .logo
     z-index 1
@@ -48,7 +50,7 @@ $height = 3 * $line-height * $font-size
 @keyframes splash-logo
   from
   33%
-    transform translateX(calc((1px * var(--translateX) / 2))) translateY(calc(1px * var(--translateY))) scale(calc(var(--scale) * 0.75))
+    transform translateX(calc((1px * var(--translateX) / 2))) translateY(calc(1px * var(--translateY))) scale(calc(var(--scale) * 0.5))
 
   67%
     transform translateX(calc((1px * var(--translateX) / 2)))
