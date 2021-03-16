@@ -10,8 +10,32 @@
 </head>
 
 <body class="-no-js">
+  <script>document.body.classList.remove('-no-js')
+  </script>
 
   <header class="splash-screen">
+    <nav class="_fade-in nav-bar">
+      <ul class="list">
+        <li class="item">
+          <a href="#discover" class="link">Présentation</a>
+        </li>
+        <li class="item">
+          <a href="#program" class="link">Programme</a>
+        </li>
+        <li class="item">
+          <a href="#ctf" class="link">CTF</a>
+        </li>
+        <li class="item">
+          <a href="#news" class="link">Actualités</a>
+        </li>
+        <li class="item">
+          <a href="#sponsors" class="link">Sponsors</a>
+        </li>
+        <li class="item">
+          <a href="https://m.youtube.com/watch?v=dQw4w9WgXcQ" class="button">Préinscription</a>
+        </li>
+      </ul>
+    </nav>
     <div class="wrapper">
       <h1 class="splash-title">
         <span class="logo glitched-element">
@@ -43,25 +67,29 @@
         </span>
       </h1>
     </div>
-    <h2 class="splash-countdown _fade-in">J-99.242833</h2>
+    <h2 class="splash-countdown _fade-in">J−<span id="countdown-value"></span></h2>
   </header>
 
-  <section class="_fade-in">
-    <h2>Lorem ipsum dolor sit amet</h2>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere sunt ducimus ipsum dolorum reprehenderit ullam
-      ipsam numquam voluptatem nisi, reiciendis harum omnis qui itaque sapiente fuga! Vel aliquid blanditiis aspernatur.
-    </p>
-    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex veritatis ab veniam. Perspiciatis beatae harum eius
-      sapiente porro neque laudantium tenetur omnis maxime voluptatem! Qui eum dolores magnam facilis obcaecati?</p>
-  </section>
+  <div class="home-content _fade-in">
+    <section>
+      <h2>Lorem ipsum dolor sit amet</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere sunt ducimus ipsum dolorum reprehenderit ullam
+        ipsam numquam voluptatem nisi, reiciendis harum omnis qui itaque sapiente fuga! Vel aliquid blanditiis
+        aspernatur.
+      </p>
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex veritatis ab veniam. Perspiciatis beatae harum
+        eius
+        sapiente porro neque laudantium tenetur omnis maxime voluptatem! Qui eum dolores magnam facilis obcaecati?</p>
+    </section>
 
-  <section class="_fade-in">
-    <h2>Twitter widget</h2>
-  </section>
+    <section>
+      <h2>Twitter widget</h2>
+    </section>
 
-  <section class="_fade-in">
-    <h2>Sponsors</h2>
-  </section>
+    <section>
+      <h2>Sponsors</h2>
+    </section>
+  </div>
 
   <footer class="_fade-in">
     <h2>Contact</h2>
