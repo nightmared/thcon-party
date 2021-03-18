@@ -10,7 +10,10 @@ document.body.style.setProperty('--scale', window.innerHeight / $title.offsetHei
 document.body.style.setProperty('--translateY', window.innerHeight / 2 - computeOffset($title, 'offsetTop') - $title.offsetHeight / 2)
 document.body.style.setProperty('--translateX', $words.offsetWidth)
 
-document.body.classList.add('-do-splash')
+console.log(window.scrollY)
+if (window.scrollY <= 1 && window.location.hash.length === 0) {
+  document.body.classList.add('-do-splash')
+}
 
 const update = () => {
   const diff = new Date('2021-06-11T11:00:00.000Z') - new Date()

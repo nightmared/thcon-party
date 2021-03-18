@@ -1,13 +1,16 @@
 ._text-justify
   text-align justify
 
-._fade-in
-  opacity 0
-  transition opacity $timing-normal ($timing-splash - $timing-fast)
+/* stylelint-disable-next-line */
+body.-do-splash ._fade-in
+  animation fadein $timing-splash
 
-  /* stylelint-disable-next-line */
-  body.-do-splash &
-  body.-no-js &
+@keyframes fadein
+  from
+  85%
+    opacity 0
+
+  100%
     opacity 1
 
 ._accent
