@@ -40,13 +40,13 @@ $glitch-offset = 2px
 @keyframes glitch1
   for i in 0 .. 19
     {s('%s% , %s%', i * 5, (i + 1) * 5 - 1)}
-      $top = math(0, 'random') * 70
-      $bottom = math(0, 'random') * 20 + $top
+      $top = math(math(0, 'random') * 70, 'round')
+      $bottom = math(math(0, 'random') * 20 + $top, 'round')
       clip-path s('polygon(0 %s%, 0 %s%, 100% %s%, 100% %s%)', $top, $bottom, $bottom, $top)
 
 @keyframes glitch2
   for i in 0 .. 19
     {s('%s% , %s%', i * 5, (i + 1) * 5 - 1)}
-      $top = math(0, 'random') * 70 + 10
-      $bottom = math(0, 'random') * 20 + $top
+      $top = math(math(0, 'random') * 70 + 10, 'round')
+      $bottom = math(math(0, 'random') * 20 + $top, 'round')
       clip-path s('polygon(0 %s%, 0 %s%, 100% %s%, 100% %s%)', $top, $bottom, $bottom, $top)
