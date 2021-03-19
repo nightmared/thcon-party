@@ -51,7 +51,7 @@ const $countdown = $('#countdown-value');
   }
 
   const $console = $('#splash-console > pre > code')
-  $('#fl\u0061g').innerHTML = atob('VEhDb24yMXt1bmRlci15b3VyLW5vc2V9').replace(/./g, '*')
+  $('#flag').innerHTML = atob('VEhDb24yMXt1bmRlci15b3VyLW5vc2V9').replace(/./g, '*')
   const consoleText: [{type: string, value?: string}] = [...$console.childNodes].map($node => {
     if ($node instanceof Text) {
       return { type: 'raw', value: $node.wholeText }
