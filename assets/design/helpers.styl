@@ -3,11 +3,11 @@
 
 /* stylelint-disable-next-line */
 body.-do-splash ._fade-in
-  animation fadein $timing-splash
+  animation fadein ($timing-splash + $timing-fast)
 
 @keyframes fadein
   from
-  85%
+  90%
     opacity 0
 
   100%

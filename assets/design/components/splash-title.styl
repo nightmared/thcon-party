@@ -4,18 +4,16 @@ $height = 3 * $line-height * $font-size
 
 .splash-title
   display flex
-  margin 0
-  font-weight 500
+  margin $gap-huge
   font-size $font-size
-  font-family overpass, monospace
+  font-family overpass, $sans-serif, sans-serif
   line-height $line-height
-  letter-spacing -0.1em
 
   > .logo
     z-index 1
     width auto
     height $height
-    background linear-gradient(to right, #fff 80%, transparent)
+    padding 0.17em 0
 
     > .image
       width auto
@@ -28,9 +26,15 @@ $height = 3 * $line-height * $font-size
       bottom -5%
       width 100vw
       background #fff
+      visibility hidden
       content ''
 
+      /* stylelint-disable-next-line */
+      body.-do-splash &
+        animation hide $timing-splash
+
   > .words
+    padding-left $gap-normal
     transition transform $timing-splash
 
   /* stylelint-disable-next-line */
@@ -50,13 +54,25 @@ $height = 3 * $line-height * $font-size
 @keyframes splash-logo
   from
   33%
-    transform translateX(calc((1px * var(--translateX) / 2))) translateY(calc(1px * var(--translateY))) scale(calc(var(--scale) * 0.5))
+    background linear-gradient(to right, #fff 80%, transparent)
+    transform translateX(calc((1px * var(--splash-translateX) / 2))) translateY(calc(1px * var(--splash-translateY))) scale(calc(var(--splash-scale) * 0.5))
 
   67%
-    transform translateX(calc((1px * var(--translateX) / 2)))
+    background linear-gradient(to right, #fff 80%, transparent)
+    transform translateX(calc((1px * var(--splash-translateX) / 2)))
+
+  90%
+    background linear-gradient(to right, #fff 80%, transparent)
 
 @keyframes splash-words
   from
   67%
-    transform translateX(calc(-1px * var(--translateX)))
+    transform translateX(calc(-1px * var(--splash-translateX)))
     opacity 0
+
+@keyframes hide
+  from
+    visibility visible
+
+  90%
+    visibility hidden
