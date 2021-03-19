@@ -1,6 +1,7 @@
 ---
 layout: index.njk
 title: Toulouse Hacking Convention
+description: Une journée de conférences autour de la sécurité informatique, 100% en ligne cette année.
 ---
 
 <h2 id="discover">Présentation</h2>
