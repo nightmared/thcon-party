@@ -27,26 +27,22 @@ $glitch-offset = 2px
     animation-name glitch2
     clip-path polygon(0 100%, 0 100%, 100% 100%, 100% 100%)
 
-  &::selection
-    color #fff
-    background none
-
   /* stylelint-disable-next-line */
   body.-do-splash &
     > .glitch1
     > .glitch2
-      animation-iteration-count unit(($timing-splash / $timing-slow) * 1.1, '')
+      animation-iteration-count unit(($timing-splash / $timing-slow) * 1.5, '')
 
 @keyframes glitch1
   for i in 0 .. 19
     {s('%s% , %s%', i * 5, (i + 1) * 5 - 1)}
       $top = math(math(0, 'random') * 70, 'round')
-      $bottom = math(math(0, 'random') * 20 + $top, 'round')
+      $bottom = math(math(0, 'random') * 10 + $top, 'round')
       clip-path s('polygon(0 %s%, 0 %s%, 100% %s%, 100% %s%)', $top, $bottom, $bottom, $top)
 
 @keyframes glitch2
   for i in 0 .. 19
     {s('%s% , %s%', i * 5, (i + 1) * 5 - 1)}
-      $top = math(math(0, 'random') * 70 + 10, 'round')
-      $bottom = math(math(0, 'random') * 20 + $top, 'round')
+      $top = math(math(0, 'random') * 70 + 20, 'round')
+      $bottom = math(math(0, 'random') * 10 + $top, 'round')
       clip-path s('polygon(0 %s%, 0 %s%, 100% %s%, 100% %s%)', $top, $bottom, $bottom, $top)

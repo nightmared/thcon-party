@@ -3,18 +3,18 @@
 
 /* stylelint-disable-next-line */
 body.-do-splash ._fade-in
-  animation fadein ($timing-splash + $timing-fast)
+  animation fadein ($timing-splash * 1.25)
 
 @keyframes fadein
   from
-  90%
+  80%
     opacity 0
 
   100%
     opacity 1
 
 ._accent
-  color #e51e21
+  color $red
 
 ._flex
   display flex

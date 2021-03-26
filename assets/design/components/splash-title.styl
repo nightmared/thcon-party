@@ -5,9 +5,11 @@ $height = 3 * $line-height * $font-size
 .splash-title
   display flex
   margin $gap-huge
+  color $white
   font-size $font-size
   font-family overpass, $sans-serif, sans-serif
   line-height $line-height
+  user-select none
 
   > .logo
     z-index 1
@@ -43,7 +45,7 @@ $height = 3 * $line-height * $font-size
       animation splash-logo $timing-splash
 
     > .words
-      animation splash-words $timing-splash
+      animation splash-words $timing-splash, splash-words-color ($timing-splash * 1.25)
 
   /* stylelint-disable-next-line */
   &:hover .glitched-element
@@ -69,6 +71,11 @@ $height = 3 * $line-height * $font-size
   67%
     transform translateX(calc(-1px * var(--splash-translateX)))
     opacity 0
+
+@keyframes splash-words-color
+  from
+  80%
+    color $black
 
 @keyframes hide
   from

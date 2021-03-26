@@ -1,13 +1,32 @@
+$light-band = #012c54
+$dark-band = #002140
+$color = lighten($light-band, 35%)
+
 .splash-background
   position relative
   width 100%
   height 100%
-  color #888
-  background #fff
+  color $color
+  text-shadow 0 0 2px $color
+  background-color $dark-band
+  background-image linear-gradient(to bottom, transparent 50%, $light-band 50.1%)
+  background-size 100% 10px
   clip-path polygon(0 0, 100% 0, 100% calc(100% - min(1, var(--scroll)) * 10%), 50% 100%, 0 calc(100% - min(1, var(--scroll)) * 10%))
+
+  &::after
+    position absolute
+    top 0
+    right 0
+    bottom 0
+    left 0
+    z-index 2
+    background-image radial-gradient(#0003, #000a, #000c)
+    background-size cover
+    content ''
 
   > .console
     position absolute
     bottom 0
+    z-index 1
     padding $gap-normal
     line-height 1
