@@ -10,7 +10,7 @@ La Toulouse Hacking Contention (ou THC) est une journée de conférences qui ras
 
 Cette année, la cinquième édition de la THC sera **entièrement à distance**. Aucune excuse pour ne pas y assister !
 
-- PHOTO
+<img src="url:~/resources/team.jpg?width=960">
 
 <h2 id="ctf">Capture the Flag</h2>
 
