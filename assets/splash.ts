@@ -111,47 +111,32 @@ const $countdown = $('#countdown-value');
   $console.innerHTML = ''
   const write = (s: string) => { $console.innerText += s }
 
-  let t = performance.now()
-
   const update = () => {
-    const nt = performance.now()
-    let dt = nt - t
+    if (consoleText.length === 0) {
+      return
+    }
+    const top = consoleText[0]
 
-    while (dt > 0) {
-      if (consoleText.length === 0) {
+    if (top.type === 'raw') {
+      write(top.value)
+      consoleText.shift()
+      update()
+    } else if (top.type === 'interrupt' || top.type === 'newline') {
+      if (top.type === 'newline') {
+        write('\n')
+      }
+      consoleText.shift()
+      setTimeout(update, delays[top.type])
+    } else if (top.type === 'typed') {
+      if (top.value === '') {
+        consoleText.shift()
+        update()
         return
       }
-      const top = consoleText[0]
-
-      if (top.type === 'raw') {
-        write(top.value)
-        consoleText.shift()
-      } else if (top.type === 'interrupt' || top.type === 'newline') {
-        if (dt < delays[top.type]) {
-          break
-        }
-        dt -= delays[top.type]
-        t += delays[top.type]
-        if (top.type === 'newline') {
-          write('\n')
-        }
-        consoleText.shift()
-      } else if (top.type === 'typed') {
-        if (top.value === '') {
-          consoleText.shift()
-          continue
-        }
-        if (dt < delays.typed) {
-          break
-        }
-        dt -= delays.typed
-        t += delays.typed
-        write(top.value[0])
-        top.value = top.value.substring(1)
-      }
+      write(top.value[0])
+      top.value = top.value.substring(1)
+      setTimeout(update, delays.typed)
     }
-
-    requestAnimationFrame(update)
   }
   update()
 })()
