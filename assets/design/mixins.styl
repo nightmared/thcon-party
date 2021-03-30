@@ -1,0 +1,44 @@
+beautiful-link($color, $bg)
+  $line = unit((1 / 16), 'em')
+  padding 0 2 * $line 2 * $line
+  text-decoration none
+  background-image linear-gradient($color, $color), linear-gradient($color, $color)
+  background-repeat no-repeat, no-repeat
+  background-position bottom left, bottom right
+  background-size 100% $line, 0% (2 * $line)
+  border-radius 2 * $line
+  transition $timing-fast color, $timing-fast background-size
+
+  &:hover
+    background-position bottom left, bottom left
+    background-size 100% $line, 100% (2 * $line)
+
+  &:focus
+  &:active
+    color $bg
+    background-position bottom left, bottom left
+    background-size 100% 100%, 0% (2 * $line)
+    outline none
+
+beautiful-button($color, $bg)
+  display inline-block
+  padding $gap-small $gap-normal
+  color $color
+  font-weight bold
+  white-space nowrap
+  text-decoration inherit
+  text-shadow none
+  background-image linear-gradient(100deg, $bg 50%, alpha($bg, 90%) 50.1%)
+  background-position right center
+  background-size 250% 100%
+  border-radius $radius-small
+  box-shadow $shadow-lighter
+  transition background-position $timing-normal
+
+  &:hover
+  &:focus
+    background-position left center
+
+  > .icon
+    height 2.5rem
+    margin-left $gap-small

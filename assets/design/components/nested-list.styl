@@ -1,0 +1,25 @@
+.nested-list
+  position absolute
+  left 50%
+  display none
+  min-width 150%
+  padding 0
+  padding 0 $gap-small $gap-small
+  text-align center
+  list-style-type none
+  background $white
+  border-radius 0 0 $radius-normal $radius-normal
+  box-shadow 0 -6px 0 #fff, $shadow-normal #000
+  transform translateX(-50%)
+
+  &:hover
+  &:focus
+  &:focus-within
+    display block
+
+  > li > a
+    display inline-block
+    margin 0 $gap-small $gap-normal
+    color inherit
+    text-decoration inherit
+    beautiful-link($black, $white)
