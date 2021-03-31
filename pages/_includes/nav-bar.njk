@@ -1,34 +1,33 @@
 <nav class="nav-bar">
   <ul class="list">
     <li class="item">
-      <a href="#discover" class="link">Présentation</a>
+      <a href="#discover" class="link">{{ "Introduction" | translate }}</a>
     </li>
     <li class="item">
-      <a href="#program" class="link">Programme</a>
+      <a href="#ctf" class="link">{{ "CTF" | translate }}</a>
     </li>
     <li class="item">
-      <a href="#ctf" class="link">CTF</a>
-    </li>
-    <li class="item">
-      <a href="#news" class="link">Actualités</a>
+      <a href="#news" class="link">{{ "News" | translate }}</a>
     </li>
     <li class="item -nested">
-      <span class="nested-list-label" tabindex="0">Sponsors<svg width="24" height="8" viewBox="0 0 24 8" xmlns="http://www.w3.org/2000/svg" class="icon" aria-hidden="true"><path d="M0 0L0 1L12 8L24 1L24 0L24 0L12 7z"/></svg>
+      <span class="nested-list-label" tabindex="0">{{ "Sponsors" | translate }}
+        <svg width="24" height="8" viewBox="0 0 24 8" xmlns="http://www.w3.org/2000/svg" class="icon" aria-hidden="true"><path d="M0 0L0 1L12 8L24 1L24 0L24 0L12 7z"/></svg>
       </span>
       <ul class="nested-list">
         <li>
-          <a href="{{ 'sponsors' | localizeurl }}#gold">Gold</a>
+          <a href="{{ 'sponsors' | localizeurl }}#gold">{{ "Gold" | translate }}</a>
         </li>
         <li>
-          <a href="{{ 'sponsors' | localizeurl }}#silver">Silver</a>
+          <a href="{{ 'sponsors' | localizeurl }}#silver">{{ "Silver" | translate }}</a>
         </li>
         <li>
-          <a href="{{ 'sponsors' | localizeurl }}#bronze">Bronze</a>
+          <a href="{{ 'sponsors' | localizeurl }}#bronze">{{ "Bronze" | translate }}</a>
         </li>
       </ul>
     </li>
     <li class="item -nested">
-      <span class="nested-list-label" tabindex="0">Historique<svg width="24" height="8" viewBox="0 0 24 8" xmlns="http://www.w3.org/2000/svg" class="icon" aria-hidden="true"><path d="M0 0L0 1L12 8L24 1L24 0L24 0L12 7z"/></svg>
+      <span class="nested-list-label" tabindex="0">{{ "History" | translate }}
+        <svg width="24" height="8" viewBox="0 0 24 8" xmlns="http://www.w3.org/2000/svg" class="icon" aria-hidden="true"><path d="M0 0L0 1L12 8L24 1L24 0L24 0L12 7z"/></svg>
       </span>
       <ul class="nested-list">
         <li>
@@ -46,7 +45,7 @@
       </ul>
     </li>
     <li class="item">
-      <a href="https://m.youtube.com/watch?v=dQw4w9WgXcQ" class="button">Préinscription</a>
+      <a href="https://m.youtube.com/watch?v=dQw4w9WgXcQ" class="button">{{ "Pre-registration" | translate }}</a>
     </li>
   </ul>
 </nav>
