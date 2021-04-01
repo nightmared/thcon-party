@@ -1,28 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
-
-  <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="{{ description }}">
-    <title>{{ title }}</title>
-    <link rel="stylesheet" href="~/assets/design.styl">
-  </head>
-
-  <body class="-no-js">
-    <script>
-      document
-        .body
-        .classList
-        .remove('-no-js')
-    </script>
-
-    <header class="splash-screen">
-      <div class="background _fade-in" aria-hidden="true">
-        <div class="splash-background">
-          <div class="console" id="splash-console">
-            <pre><code>lilpirate@toulouse$ <i></i><i></i><i></i><i></i><s>ssh root@thcon.party</s><br><i></i><br>root@thcon.party's password: <i></i><i></i><s id="flag"></s><br><i></i><br>      __   __   ___  __   __      __   __            ___  ___  __<br> /\  /  ` /  ` |__  /__` /__`    / _` |__)  /\  |\ |  |  |__  |  \<br>/--\ \__, \__, |___ .__/ .__/    \__&gt; |  \ /--\ | \|  |  |___ |__/<br><br><i></i>Welcome back, root.<br>Last login: March 6th, 2020.<br><br><br></code><code class="blinking-cursor">█</code></pre></div>
+---
+layout: html.njk
+---
+<header class="splash-screen">
+  <div class="background _fade-in" aria-hidden="true">
+    <div class="splash-background">
+      <div class="console" id="splash-console">
+        <pre><code>lilpirate@toulouse$ <i></i><i></i><i></i><i></i><s>ssh root@thcon.party</s><br><i></i><br>root@thcon.party's password: <i></i><i></i><s id="flag"></s><br><i></i><br>      __   __   ___  __   __      __   __            ___  ___  __<br> /\  /  ` /  ` |__  /__` /__`    / _` |__)  /\  |\ |  |  |__  |  \<br>/--\ \__, \__, |___ .__/ .__/    \__&gt; |  \ /--\ | \|  |  |___ |__/<br><br><i></i>Welcome back, root.<br>Last login: March 6th, 2020.<br><br><br></code><code class="blinking-cursor">█</code></pre></div>
         </div>
       </div>
       <div class="_flex _flex1 _fade-in">
@@ -70,7 +53,7 @@
           <span class="countdown">{{ "T−" | translate }}<span id="countdown-value"></span></span>
         </h2>
         <div class="huge-link _center" aria-hidden="true">
-          <a href="#discover" class="link" tabindex="-1">
+          <a href="#intro" class="link" tabindex="-1">
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" class="waddling-arrow"><path d="M0 7.33l2.829-2.83 9.175 9.339 9.167-9.339 2.829 2.83-11.996 12.17z" fill="currentColor"/></svg>
           </a>
         </div>
@@ -87,7 +70,3 @@
     </footer>
 
     <script src="~/assets/splash.ts"></script>
-
-  </body>
-
-</html>

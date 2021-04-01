@@ -4,16 +4,26 @@ title: Toulouse Hacking Convention
 description: Une journée de conférences autour de la sécurité informatique, 100% en ligne cette année.
 ---
 
-<h2 id="discover">Présentation</h2>
+<h2 id="intro">Présentation</h2>
 
-[à valider]
+La **Toulouse Hacking Contention** (ou THC) **est une journée de conférences** qui rassemble étudiants, professionels, chercheurs et passionés de sécurité informatique autour de présentations et d'ateliers.
 
-La Toulouse Hacking Contention (ou THC) est une journée de conférences qui rassemble étudiants, professionels, chercheurs et passionés de sécurité informatique autour de présentations et d'ateliers.
+La THC est organisée **tous les ans depuis 2017**, année de sa création. C'est aujourd'hui un rendez-vous incontournable dans le monde de la sécurité informatique en Occitanie.
 
-Cette année, la cinquième édition de la THC sera **entièrement à distance**. Aucune excuse pour ne pas y assister !
+Cette année, la cinquième édition de la THC sera **entièrement à distance**, qu'il s'agisse des conférences ou du CTF. C'est l'occasion d'y assister depuis les quatres coins du monde !
 
-[image + historique rapide à écrire]
-<!-- <img src="url:~/resources/team.jpg?width=960" alt="L'équipe derrière l'édition 2020"> -->
+<div class="text-and-image"><div class="text">
+
+### Qui sommes-nous ?
+
+Nous sommes une équipe de passionnés toulousains et nous investissons notre énergie dans la création d'un évènement majeur du monde de la sécurité informatique.
+
+Notre équipe est composée de professionels, d'anciens et actuels étudiants et de chercheurs basés à Toulouse et **nous sommes motivés par le partage et la transmission des connaissances**.
+
+</div>
+<div class="image"><img src="url:~/resources/team.jpg?width=960&as=webp" alt="L'équipe derrière l'édition 2020"></div>
+
+</div>
 
 <h2 id="ctf">Capture the Flag</h2>
 
