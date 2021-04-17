@@ -1,0 +1,32 @@
+.page-footer
+  margin-top $gap-huge
+  overflow hidden
+  color $white
+  text-align center
+  filter drop-shadow($shadow-normal-upside-down #cccc)
+
+  > .wrapper
+    padding $gap-large
+    background linear-gradient(to bottom, $light-band, darken($dark-band, 50%))
+    clip-path polygon(0 10%, 50% 0, 100% 10%, 100% 100%, 0 100%)
+
+    > .flex
+      @media (min-width $media-large)
+        display flex
+        align-items center
+
+        > .left
+        > .right
+          flex 1
+          margin 0 $gap-normal
+
+        > .left
+          text-align right
+
+        >.right
+          text-align left
+
+  /* stylelint-disable rscss/no-descendant-combinator */
+  a._beautiful-link
+    color inherit
+    beautiful-link($white, $light-band)

@@ -19,7 +19,7 @@
     "build:parcel-github": "PARCEL_WORKERS=0 parcel build '_pre-dist/**/*.{html,txt}' --dist-dir _dist --cache-dir _cache --no-source-maps --public-url /thcon-party/",
     "test": "yarn test:styl && yarn test:ts && echo ':)'",
     "test:styl": "stylelint './assets/**/*.styl' --custom-syntax stylelint-plugin-stylus/custom-syntax --fix",
-    "test:ts": "eslint './assets/**/*.ts' './.eleventy.js' --fix",
+    "test:ts": "eslint './assets/**/*.ts' './.eleventy.js' './pages/**/*.js' --fix",
     "preview": "yarn build && yarn serve --no-clipboard _dist"
   },
   "devDependencies": {

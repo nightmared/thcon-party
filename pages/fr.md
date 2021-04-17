@@ -6,7 +6,7 @@ description: Une journée de conférences autour de la sécurité informatique, 
 
 <h2 id="intro">Présentation</h2>
 
-La **Toulouse Hacking Contention** (ou THC) **est une journée de conférences** qui rassemble étudiants, professionels, chercheurs et passionés de sécurité informatique autour de présentations et d'ateliers.
+La **Toulouse Hacking Convention** (ou THC) **est une journée de conférences** qui rassemble étudiants, professionels, chercheurs et passionés de sécurité informatique autour de présentations et d'ateliers.
 
 La THC est organisée **tous les ans depuis 2017**, année de sa création. C'est aujourd'hui un rendez-vous incontournable dans le monde de la sécurité informatique en Occitanie.
 
@@ -46,6 +46,7 @@ Brice de Nice : bien d'accord avec vous (un talk avec un nom super long)
 <h2 id="news">Actualités</h2>
 
 <a class="twitter-timeline" data-height="400" data-dnt="true" data-theme="light" href="https://twitter.com/ToulouseHacking?ref_src=twsrc%5Etfw" style="display: block; height: 300px; background: #ccc; line-height: 300px;  text-align: center;">Tweets by ToulouseHacking</a>
+
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 <h2 id="sponsors">Sponsors</h2>

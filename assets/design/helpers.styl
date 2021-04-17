@@ -33,3 +33,25 @@ body.-do-splash ._fade-in
 
 ._inline-block
   display inline-block
+
+._inline-logo
+  width 1.5em
+  height 1.5em
+  margin 0 ($gap-small / 2)
+  color inherit
+  vertical-align bottom
+  fill currentColor
+
+._logo-link
+  color inherit
+  text-decoration none
+
+  &:hover
+  &:focus
+    color $red
+
+  > svg
+    width 4rem
+    height 4rem
+    vertical-align bottom
+    fill currentColor

@@ -60,13 +60,10 @@ layout: html.njk
       </div>
     </header>
 
-    <div class="page-content _fade-in">
+    <div class="page-content">
       {{ content | safe }}
     </div>
 
-    <footer class="_fade-in">
-      <h2>Contact</h2>
-      <p>Previous editions</p>
-    </footer>
+    {% include "footer.njk" %}
 
     <script src="~/assets/splash.ts"></script>
