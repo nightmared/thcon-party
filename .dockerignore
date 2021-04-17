@@ -1,0 +1,7 @@
+# Dependency directories
+node_modules/
+
+# Generated directories
+_cache/
+_dist/
+_pre-dist/
