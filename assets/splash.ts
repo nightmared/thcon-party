@@ -35,8 +35,10 @@ const $countdown = $('#countdown-value');
     if (diff < 0) {
       $countdown.innerHTML = '0!!'
     } else {
-      const str = (diff / (1000 * 60 * 60 * 24)).toFixed(7)
-      $countdown.innerHTML = str
+      const str = (diff / (1000 * 60 * 60 * 24)).toFixed(5)
+      if ($countdown.innerHTML !== str) {
+        $countdown.innerHTML = str
+      }
       requestAnimationFrame(update)
     }
   }
@@ -78,35 +80,18 @@ const $countdown = $('#countdown-value');
     })
     consoleText.push({ type: 'newline' }, { type: 'interrupt' })
   }
-  const animationEnd = () => {
-    addCode('flag.txt', 'There\'s a flag here?!')
-    consoleText.push(
-      { type: 'raw', value: 'root@thcon.party:~$ ' },
-      { type: 'interrupt' },
-      { type: 'interrupt' },
-      { type: 'typed', value: 'Interested in the CTF? Keep reading this page ;)' },
-      { type: 'interrupt' },
-      { type: 'raw', value: '^C' },
-      { type: 'newline' },
-      { type: 'newline' },
-      { type: 'raw', value: 'root@thcon.party:~$ ' }
-    )
-  }
-
-  addCode('index.html', document.documentElement.innerHTML)
-
-  Promise.all([
-    fetch(document.currentScript.src).then(res => res.text()).then(src => {
-      addCode('splash.js', src)
-      return Promise.resolve()
-    }),
-
-    fetch($('link[rel=stylesheet]').href).then(res => res.text()).then(src => {
-      addCode('design.css', src)
-      return Promise.resolve()
-    })
-
-  ]).then(() => { animationEnd() }).catch(_ => { animationEnd() })
+  addCode('flag.txt', 'There\'s a flag here?!')
+  consoleText.push(
+    { type: 'raw', value: 'root@thcon.party:~$ ' },
+    { type: 'interrupt' },
+    { type: 'interrupt' },
+    { type: 'typed', value: 'Interested in the CTF? Keep reading this page ;)' },
+    { type: 'interrupt' },
+    { type: 'raw', value: '^C' },
+    { type: 'newline' },
+    { type: 'newline' },
+    { type: 'raw', value: 'root@thcon.party:~$ ' }
+  )
 
   $console.innerHTML = ''
   const write = (s: string) => { $console.innerText += s }
