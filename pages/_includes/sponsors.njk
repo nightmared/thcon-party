@@ -1,0 +1,9 @@
+{%- for tier, list in sponsors -%}
+  {%- if list.length > 0 -%}
+    <p class="sponsor-list -{{tier}}">
+      {%- for sponsor in list -%}
+        <img src="{{ sponsor.image }}" alt="{{ sponsor.name }}" height="200">
+      {%- endfor -%}
+    </p>
+  {%- endif -%}
+{%- endfor -%}

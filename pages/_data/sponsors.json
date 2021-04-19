@@ -1,0 +1,19 @@
+{
+  "gold": [],
+  "silver": [
+    {
+      "name": "Atos",
+      "image": "~/resources/logos/atos.svg"
+    }
+  ],
+  "bronze": [
+    {
+      "name": "G-Echo",
+      "image": "~/resources/logos/g-echo.svg"
+    },
+    {
+      "name": "Synacktiv",
+      "image": "~/resources/logos/synacktiv.png"
+    }
+  ]
+}

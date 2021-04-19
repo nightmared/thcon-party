@@ -22,41 +22,26 @@ Notre équipe est composée de professionels, d'anciens et actuels étudiants et
 
 </div>
 <div class="image"><img src="url:~/resources/team.jpg?width=960&as=webp" alt="L'équipe derrière l'édition 2020"></div>
-
 </div>
 
 <h2 id="ctf">Capture the Flag</h2>
 
-[à valider]
+**Cette année, le _Capture the Flag_ de la THC revient, plus en forme que jamais !** Les participants vont devoir mettre leurs talents de piratage à l'épreuve pour **résoudre des défis** : trouver une faille de sécurité dans un site web, fouiller des données d'une image mémoire, découvrir les vulnérabilités d'un protocole de chiffrement… La résolution d'un défi consiste en l'obtention d'un drapeau (le _flag_), une sorte de mot de passe dont la validation rapporte des points.
 
-Cette année, le _Capture the Flag_ de la THC revient, plus en forme que jamais. Toutes vos catégories préférées seront de la partie : pwn, reverse, crypto, web… Vous aurez 24 heures pour venir à bout des _challenges_ qui vous attendent.
+Les équipes gagnantes **remporteront de beaux lots** comme un équipement de pirate, des t-shirts et d'autres suprises !
 
-<!-- - EN SAVOIR PLUS -->
-
-## Oratrices et orateurs
-
-[à remplacer]
-
-Léa Bricot : la sécu c'est cool
-
-Jean Neymar : oui c'est vrai
-
-Brice de Nice : bien d'accord avec vous (un talk avec un nom super long)
+<!-- ## Oratrices et orateurs -->
 
 <h2 id="news">Actualités</h2>
 
-<a class="twitter-timeline" data-height="400" data-dnt="true" data-theme="light" href="https://twitter.com/ToulouseHacking?ref_src=twsrc%5Etfw" style="display: block; height: 300px; background: #ccc; line-height: 300px;  text-align: center;">Tweets by ToulouseHacking</a>
+<a class="twitter-timeline" data-height="350" data-dnt="true" data-theme="light" href="https://twitter.com/ToulouseHacking?ref_src=twsrc%5Etfw" style="display: block; height: 350px; background: #ccc; line-height: 350px; text-align: center;">Tweets par @ToulouseHacking</a>
 
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 <h2 id="sponsors">Sponsors</h2>
 
-[à remplir]
-
-Images des sponsor de catégorie Gold
-
-[suite des sponsors sur une autre page]
+{% include "sponsors.njk" %}
 
 ## Intéréssé·e ?
 
-[gros bouton pré-inscription]
+La pré-inscription est gratuite !
