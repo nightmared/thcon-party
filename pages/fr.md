@@ -1,6 +1,5 @@
 ---
 layout: index.njk
-title: Toulouse Hacking Convention
 description: Une journée de conférences autour de la sécurité informatique, 100% en ligne cette année.
 ---
 
@@ -45,3 +44,5 @@ Les équipes gagnantes **remporteront de beaux lots** comme un équipement de pi
 ## Intéréssé·e ?
 
 La pré-inscription est gratuite !
+
+<p class="_center"><a href="{{ links.tickets }}" class="button-link">Se pré-inscrire</a></p>

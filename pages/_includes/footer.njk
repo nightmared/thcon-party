@@ -36,9 +36,13 @@
             {{- ' – ' if not loop.last -}}
           {% endfor %}.</p>
       </p>
-      <p>Code of conduct</p>
+      <p>
+        <a href="{{ 'code-of-conduct' | localizeurl }}" class="_beautiful-link">{{ 'Code of conduct' | translate }}</a>
+      </p>
     </div>
   </div>
-  <p>{{ year }}</p>
+  <p>
+    {{ year }} – <a href="/" class="_beautiful-link">thcon.party</a>
+  </p>
 </div>
 </footer>
