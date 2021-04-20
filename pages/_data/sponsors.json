@@ -4,6 +4,10 @@
     {
       "name": "Atos",
       "image": "~/resources/logos/atos.svg"
+    },
+    {
+      "name": "Lexfo",
+      "image": "~/resources/logos/lexfo.svg"
     }
   ],
   "bronze": [
