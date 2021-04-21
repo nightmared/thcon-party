@@ -33,7 +33,7 @@ Les équipes gagnantes **remporteront de beaux lots** comme un équipement de pi
 
 <h2 id="news">Actualités</h2>
 
-<a class="twitter-timeline" data-height="350" data-dnt="true" data-theme="light" href="https://twitter.com/ToulouseHacking?ref_src=twsrc%5Etfw" style="display: block; height: 350px; background: #ccc; line-height: 350px; text-align: center;">Tweets par @ToulouseHacking</a>
+<a class="twitter-timeline" data-height="500" data-dnt="true" data-theme="light" href="https://twitter.com/ToulouseHacking?ref_src=twsrc%5Etfw" style="display: block; height: 500px; background: #ccc; line-height: 500px; text-align: center;">Tweets par @ToulouseHacking</a>
 
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
