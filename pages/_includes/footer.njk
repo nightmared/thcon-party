@@ -34,7 +34,7 @@
               <a href="{{ page.url | url }}" class="_beautiful-link">{{ locales[page.data.locale] }}</a>
             {%- endif -%}
             {{- ' – ' if not loop.last -}}
-          {% endfor %}.</p>
+          {% endfor %}</p>
       </p>
       <p>
         <a href="{{ 'code-of-conduct' | localizeurl }}" class="_beautiful-link">{{ 'Code of conduct' | translate }}</a>
