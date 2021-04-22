@@ -8,6 +8,10 @@
     {
       "name": "Lexfo",
       "image": "~/resources/logos/lexfo.svg"
+    },
+    {
+      "name": "Viveris",
+      "image": "~/resources/logos/viveris.svg"
     }
   ],
   "bronze": [
