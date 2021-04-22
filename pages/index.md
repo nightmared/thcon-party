@@ -43,4 +43,6 @@ The winning teams will **win fancy prizes** such as hacker equipment, t-shirts a
 
 Pre-register for free!
 
-<p class="_center"><a href="{{ links.tickets }}" class="button-link">Pre-register</a></p>
+<p class="_center"><span class="button-link">Pre-register</span></p>
+
+Pre-registration opens soon.

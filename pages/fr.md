@@ -45,4 +45,6 @@ Les équipes gagnantes **remporteront de beaux lots** comme un équipement de pi
 
 La pré-inscription est gratuite !
 
-<p class="_center"><a href="{{ links.tickets }}" class="button-link">Se pré-inscrire</a></p>
+<p class="_center"><span class="button-link">Se pré-inscrire</span></p>
+
+La pré-inscription ouvre bientôt.
