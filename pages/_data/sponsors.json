@@ -1,5 +1,10 @@
 {
-  "gold": [],
+  "gold": [
+    {
+      "name": "Cimi",
+      "image": "~/resources/logos/cimi.png"
+    }
+  ],
   "silver": [
     {
       "name": "Atos",
