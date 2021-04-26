@@ -2,8 +2,9 @@
   {%- if list.length > 0 -%}
     <p class="sponsor-list -{{tier}}">
       {%- for sponsor in list -%}
-        <img src="{{ sponsor.image }}" alt="{{ sponsor.name }}" height="200">
+        <a href="{{ sponsor.link }}"><img src="{{ sponsor.image }}" alt="{{ sponsor.name }}" height="200"></a>
       {%- endfor -%}
     </p>
+    {%- if not loop.last -%}<hr>{%- endif -%}
   {%- endif -%}
 {%- endfor -%}

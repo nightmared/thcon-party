@@ -2,31 +2,42 @@
   "gold": [
     {
       "name": "Cimi",
-      "image": "~/resources/logos/cimi.png"
+      "image": "~/resources/logos/cimi.png",
+      "link": "https://cimi.univ-toulouse.fr/"
     }
   ],
   "silver": [
     {
       "name": "Atos",
-      "image": "~/resources/logos/atos.svg"
+      "image": "~/resources/logos/atos.svg",
+      "link": "https://atos.net/"
     },
     {
       "name": "Lexfo",
-      "image": "~/resources/logos/lexfo.svg"
+      "image": "~/resources/logos/lexfo.svg",
+      "link": "https://www.lexfo.fr/"
     },
     {
       "name": "Viveris",
-      "image": "~/resources/logos/viveris.svg"
+      "image": "~/resources/logos/viveris.svg",
+      "link": "https://www.viveris.fr/"
     }
   ],
   "bronze": [
     {
       "name": "G-Echo",
-      "image": "~/resources/logos/g-echo.svg"
+      "image": "~/resources/logos/g-echo.svg",
+      "link": "https://www.g-echo.fr/"
     },
     {
       "name": "Synacktiv",
-      "image": "~/resources/logos/synacktiv.png"
+      "image": "~/resources/logos/synacktiv.png",
+      "link": "https://www.synacktiv.com/"
+    },
+    {
+      "name": "Bea Informatique",
+      "image": "~/resources/logos/bea.png",
+      "link": "https://www.bea-informatique.fr/"
     }
   ]
 }
