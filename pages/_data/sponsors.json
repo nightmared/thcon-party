@@ -2,7 +2,7 @@
   "gold": [
     {
       "name": "Cimi",
-      "image": "~/resources/logos/cimi.png",
+      "image": "~/resources/logos/cimi.jpg",
       "link": "https://cimi.univ-toulouse.fr/"
     }
   ],
@@ -38,6 +38,11 @@
       "name": "Bea Informatique",
       "image": "~/resources/logos/bea.png",
       "link": "https://www.bea-informatique.fr/"
+    },
+    {
+      "name": "Quarkslab",
+      "image": "~/resources/logos/quarkslab.svg",
+      "link": "https://quarkslab.com/"
     }
   ]
 }
