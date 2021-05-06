@@ -43,6 +43,11 @@
       "name": "Quarkslab",
       "image": "~/resources/logos/quarkslab.svg",
       "link": "https://quarkslab.com/"
+    },
+    {
+      "name": "Quarkslab",
+      "image": "~/resources/logos/misc.png",
+      "link": "https://connect.ed-diamond.com/MISC"
     }
   ]
 }
