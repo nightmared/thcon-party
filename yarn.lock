@@ -22,9 +22,10 @@
     linkedom "^0.5.5"
     prismjs "^1.23.0"
 
-"@11ty/eleventy@GauBen/eleventy":
-  version "1.0.0-canary.14"
-  resolved "https://codeload.github.com/GauBen/eleventy/tar.gz/e4976bfea65826d982429226f54a0118c6e0ba3a"
+"@11ty/eleventy@^1.0.0-canary.20":
+  version "1.0.0-canary.20"
+  resolved "https://registry.yarnpkg.com/@11ty/eleventy/-/eleventy-1.0.0-canary.20.tgz#855d4a9b0ede5d4985a8492a91ccfa2694e945c1"
+  integrity sha512-+C+BiyIIUVnH7qGbPWIPITlXuoNzqAiLE8z90fcuPU7AQ+dNfJRxfb8/3uSZzclZuwhqCSvUHWAea2G4nFrboQ==
   dependencies:
     "@11ty/dependency-tree" "^2.0.0"
     browser-sync "^2.26.14"
@@ -6056,9 +6057,9 @@ linkify-it@^3.0.1:
     uc.micro "^1.0.1"
 
 liquidjs@^9.23.2:
-  version "9.23.3"
-  resolved "https://registry.yarnpkg.com/liquidjs/-/liquidjs-9.23.3.tgz#47227b8fb3d88e42b6c754a89a296fd71e9751f1"
-  integrity sha512-YYcWER689qq4JohFjYnXl9vElm8QA46bQmvFCfsfqgoW2kdE8FyOwDUldGnbMgcuyS/HIi+vOQln9E+vmLvK9g==
+  version "9.24.2"
+  resolved "https://registry.yarnpkg.com/liquidjs/-/liquidjs-9.24.2.tgz#3506747ea30b393e6270f0e9bbd88d381635c825"
+  integrity sha512-cuLmLuDrn10FSQY4sZ6mjfmLy5uf5HoZ5n2k7H04ZB0Q9DBuvjx8Jw5Zd76PCo6AMV4HW7E9w5Gw17GkeK0uUQ==
 
 load-json-file@^2.0.0:
   version "2.0.0"
@@ -6263,9 +6264,9 @@ markdown-escapes@^1.0.0:
   integrity sha512-8z4efJYk43E0upd0NbVXwgSTQs6cT3T06etieCMEg7dRbzCbxUCK/GHlX8mhHRDcp+OLlHkPKsvqQTCvsRl2cg==
 
 markdown-it@^12.0.4:
-  version "12.0.4"
-  resolved "https://registry.yarnpkg.com/markdown-it/-/markdown-it-12.0.4.tgz#eec8247d296327eac3ba9746bdeec9cfcc751e33"
-  integrity sha512-34RwOXZT8kyuOJy25oJNJoulO8L0bTHYWXcdZBYZqFnjIy3NgjeoM3FmPXIOFQ26/lSHYMr8oc62B6adxXcb3Q==
+  version "12.0.6"
+  resolved "https://registry.yarnpkg.com/markdown-it/-/markdown-it-12.0.6.tgz#adcc8e5fe020af292ccbdf161fe84f1961516138"
+  integrity sha512-qv3sVLl4lMT96LLtR7xeRJX11OUFjsaD5oVat2/SNBIb21bJXwal2+SklcRbTwGwqWpWH/HRtYavOoJE+seL8w==
   dependencies:
     argparse "^2.0.1"
     entities "~2.1.0"
