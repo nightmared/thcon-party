@@ -4,6 +4,11 @@
       "name": "Cimi",
       "image": "~/resources/logos/cimi.jpg",
       "link": "https://cimi.univ-toulouse.fr/"
+    },
+    {
+      "name": "Hack the box",
+      "image": "~/resources/logos/hackthebox.svg",
+      "link": "https://www.hackthebox.eu/"
     }
   ],
   "silver": [
@@ -45,9 +50,19 @@
       "link": "https://quarkslab.com/"
     },
     {
-      "name": "Quarkslab",
+      "name": "MISC",
       "image": "~/resources/logos/misc.png",
       "link": "https://connect.ed-diamond.com/MISC"
+    },
+    {
+      "name": "Forming Consulting",
+      "image": "~/resources/logos/formind-consulting.png",
+      "link": "https://www.formind.fr/"
+    },
+    {
+      "name": "Root Me",
+      "image": "~/resources/logos/rootme.svg",
+      "link": "https://www.root-me.org/"
     }
   ]
 }

@@ -27,7 +27,7 @@ Notre équipe est composée de professionels, d'anciens et actuels étudiants et
 
 **Cette année, le _Capture the Flag_ de la THC revient, plus en forme que jamais !** Les participants vont devoir mettre leurs talents de piratage à l'épreuve pour **résoudre des défis** : trouver une faille de sécurité dans un site web, fouiller des données d'une image mémoire, découvrir les vulnérabilités d'un protocole de chiffrement… La résolution d'un défi consiste en l'obtention d'un drapeau (le _flag_), une sorte de mot de passe dont la validation rapporte des points.
 
-Les équipes gagnantes **remporteront de beaux lots** comme un équipement de pirate, des t-shirts et d'autres suprises !
+Les équipes gagnantes **remporteront de beaux lots** comme un équipement de pirate, des t-shirts et d'autres surprises !
 
 <!-- ## Oratrices et orateurs -->
 
