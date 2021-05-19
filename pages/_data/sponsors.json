@@ -26,6 +26,11 @@
       "name": "Viveris",
       "image": "~/resources/logos/viveris.svg",
       "link": "https://www.viveris.fr/"
+    },
+    {
+      "name": "Quarkslab",
+      "image": "~/resources/logos/quarkslab.svg",
+      "link": "https://quarkslab.com/"
     }
   ],
   "bronze": [
@@ -43,11 +48,6 @@
       "name": "Bea Informatique",
       "image": "~/resources/logos/bea.png",
       "link": "https://www.bea-informatique.fr/"
-    },
-    {
-      "name": "Quarkslab",
-      "image": "~/resources/logos/quarkslab.svg",
-      "link": "https://quarkslab.com/"
     },
     {
       "name": "MISC",
