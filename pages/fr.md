@@ -5,7 +5,7 @@ description: Une journée de conférences autour de la sécurité informatique, 
 
 <h2 id="intro">Présentation</h2>
 
-La **Toulouse Hacking Convention** (ou THC) **est une journée de conférences** qui rassemble étudiants, professionels, chercheurs et passionés de sécurité informatique autour de présentations et d'ateliers.
+La **Toulouse Hacking Convention** (ou THC) **est une journée de conférences** qui rassemble étudiants, professionnels, chercheurs et passionés de sécurité informatique autour de présentations et d'ateliers.
 
 La THC est organisée **tous les ans depuis 2017**, année de sa création. C'est aujourd'hui un rendez-vous incontournable dans le monde de la sécurité informatique en Occitanie.
 
