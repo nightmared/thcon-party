@@ -29,6 +29,8 @@ Notre équipe est composée de professionels, d'anciens et actuels étudiants et
 
 Les équipes gagnantes **remporteront de beaux lots** comme un équipement de pirate, des t-shirts et d'autres surprises !
 
+→ <a href="https://ctf.thcon.party/" class="_beautiful-link">Plus d'informations sur le site du CTF.</a>
+
 <!-- ## Oratrices et orateurs -->
 
 <h2 id="news">Actualités</h2>
