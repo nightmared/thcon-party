@@ -31,7 +31,7 @@ const $countdown = $('#countdown-value');
 
 (() => {
   const update = () => {
-    const diff = new Date('2021-06-11T11:00:00.000Z') - new Date()
+    const diff = new Date('2022-04-14T11:00:00.000Z') - new Date()
     if (diff < 0) {
       $countdown.innerHTML = '0!!'
     } else {

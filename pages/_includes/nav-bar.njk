@@ -1,16 +1,22 @@
 <nav class="nav-bar">
   <ul class="list">
     <li class="item">
-      <a href="#intro" class="link">{{ "Introduction" | translate }}</a>
+      <a href="{{ '/' | url }}#intro" class="link">{{ "Introduction" | translate }}</a>
     </li>
     <li class="item">
-      <a href="#ctf" class="link">{{ "CTF" | translate }}</a>
+      <a href="{{ '/' | url }}#cfp" class="link">{{ "CFP" | translate }}</a>
     </li>
     <li class="item">
-      <a href="#news" class="link">{{ "News" | translate }}</a>
+      <a href="{{ '/' | url }}#ctf" class="link">{{ "CTF" | translate }}</a>
     </li>
     <li class="item">
-      <a href="#sponsors" class="link">{{ "Sponsors" | translate }}</a>
+      <a href="{{ '/' | url }}#schedule" class="link">{{ "Schedule" | translate }}</a>
+    </li>
+    <li class="item">
+      <a href="{{ '/' | url }}#news" class="link">{{ "News" | translate }}</a>
+    </li>
+    <li class="item">
+      <a href="{{ '/' | url }}#sponsors" class="link">{{ "Sponsors" | translate }}</a>
     </li>
     {# <li class="item -nested">
       <span class="nested-list-label" tabindex="0">{{ "Sponsors" | translate }}
@@ -34,6 +40,9 @@
       </span>
       <ul class="nested-list">
         <li>
+          <a href="https://21.thcon.party/">2021</a>
+        </li>
+        <li>
           <a href="https://20.thcon.party/">2020</a>
         </li>
         <li>
@@ -46,9 +55,6 @@
           <a href="https://17.thcon.party/">2017</a>
         </li>
       </ul>
-    </li>
-    <li class="item">
-      <a href="{{ links.tickets }}" class="button">{{ "Pre-registration" | translate }}</a>
     </li>
   </ul>
 </nav>

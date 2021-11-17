@@ -1,0 +1,15 @@
+---
+layout: html.njk
+---
+
+<header>
+  <div class="_flex _flex1">
+    {% include './nav-bar.njk' %}
+  </div>
+</header>
+
+<div class="page-content">
+  {{ content | safe }}
+</div>
+
+{% include "footer.njk" %}
